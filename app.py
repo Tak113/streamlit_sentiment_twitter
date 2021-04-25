@@ -75,7 +75,7 @@ st.write('`twitterscraper is pulling 0 query result now, changing to API-based s
 
 
 # get user input
-query = st.text_input('Type `#query`:', '#')
+query = st.text_input('Type `#query(hashtag)`:', '#')
 
 # as long as the query is valid (not empty or equal to '#')...
 if query != '' and query != '#':
