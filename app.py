@@ -71,7 +71,7 @@ if input_tweet != '':
 # scrape
 
 st.subheader('Search twitter for query')
-st.write('`twitterscraper is pulling 0 query result now, changing to API-based scraping and still under dev..`')
+st.write('`twitterscraper is pulling 0 query result now, changing to API-based scraping and still under dev.. Not working now`')
 
 
 # get user input
