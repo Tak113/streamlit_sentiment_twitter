@@ -71,9 +71,11 @@ if input_tweet != '':
 # scrape
 
 st.subheader('Search twitter for query')
+st.write('`twitterscraper is pulling 0 query result now, changing to API-based scraping and still under dev..`')
+
 
 # get user input
-query = st.text_input('Type `#query` (twitterscraper is dead and not pulling data now):', '#')
+query = st.text_input('Type `#query`:', '#')
 
 # as long as the query is valid (not empty or equal to '#')...
 if query != '' and query != '#':
