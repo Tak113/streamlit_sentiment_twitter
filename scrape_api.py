@@ -6,13 +6,21 @@ import datetime, time, sys
 from abc import ABCMeta, abstractmethod
 
 #import settings.py
-import settings
+# import settings
+
+# to import environment variables
+import os
 
 # twitter api
-CK = settings.API # API
-CS = settings.API_SECRET # API Secret
-AT = settings.ACCESS_TOKEN # Access Token
-AS = settings.ACCESS_TOKEN_SECRET # Access Token Secret
+CK = os.environ['API'] # API
+CS = os.environ['API_SECRET'] # API Secret
+AT = os.environ['ACCESS_TOKEN'] # Access Token
+AS = os.environ['ACCESS_TOKEN_SECRET'] # Access Token Secret
+
+# CK = settings.API # API
+# CS = settings.API_SECRET # API Secret
+# AT = settings.ACCESS_TOKEN # Access Token
+# AS = settings.ACCESS_TOKEN_SECRET # Access Token Secret
 
 # Twitter Getter Main Class
 class TweetsGetter(object):
